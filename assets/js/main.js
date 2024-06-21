@@ -729,7 +729,7 @@
   wow.init();
 
   $('.banner-slider-v4').slick({
-    autoplay: false,
+    autoplay: true,
     slidesToScroll: 1,
     slidesToShow: 1,
     arrows: false,
