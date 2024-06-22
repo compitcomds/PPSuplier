@@ -733,10 +733,12 @@
     slidesToScroll: 1,
     slidesToShow: 1,
     arrows: false,
-    draggable:true,
-    dots: false
+    draggable: true,
+    dots: false,
+    autoplaySpeed: 5000, // Adjust the delay between slides (in milliseconds)
+    speed: 1000 // Adjust the transition duration (in milliseconds)
   }).slickAnimation();
-
+  
 
     $('.service-slider').slick({
       infinite: true,

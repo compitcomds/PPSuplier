@@ -1728,7 +1728,77 @@ textarea.is-invalid {
 .custom-slider-btns .slick-prev + .slick-prev + .slick-next {
   display: none;
 }
+/* whatsapp button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 60px; /* Initial bottom margin */
+  left: 60px; /* Position from the right */  
+  background-color: #FF741B; /* WhatsApp green color */
+  color: white; /* Icon color */
+  border-radius: 50%; /* Make it a circle */
+  
+  font-size: 24px; /* Icon size */
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: bottom 0.3s ease; /* Smooth transition for bottom margin */
+}
+.whatsapp-btn i {
+  display: inline-block;
+  background-color: var(--theme-color2);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 16px;
+  width: var(--btn-size, 45px);
+  height: var(--btn-size, 45px);
+  line-height: var(--btn-size, 45px);
+  z-index: 2;
+  border-radius: inherit;
+  position: relative;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
+}
+.whatsapp-btn:before {
+  content: "";
+  position: absolute;
+  left: var(--extra-shape, -6px);
+  top: var(--extra-shape, -6px);
+  right: var(--extra-shape, -6px);
+  bottom: var(--extra-shape, -6px);
+  background-color: transparent;
+  border-radius: inherit;
+  z-index: 1;
+  border: 2px dashed var(--theme-color2);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  -webkit-animation: spin 13s infinite linear;
+          animation: spin 13s infinite linear;
+}
+.whatsapp-btn:focus i, .whatsapp-btn:hover i {
+  background-color: var(--theme-color);
+  color: var(--white-color);
+}
+.whatsapp-btn:focus:before, .whatsapp-btn:hover:before {
+  border-color: var(--theme-color);
+}
+.whatsapp-btn.show {
+  bottom: 120px;
+  opacity: 1;
+  visibility: visible;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    bottom: 60px; /* Increase bottom margin for smaller screens */
+  }
+}
 
+@media (max-width: 480px) {
+  .whatsapp-btn {
+    bottom: 80px; /* Further increase bottom margin for very small screens */
+  }
+}
+/* whatsapp button end */
 /* Medium devices */
 @media (max-width: 991px) {
   br {
