@@ -1732,7 +1732,7 @@ textarea.is-invalid {
 .whatsapp-btn {
   position: fixed;
   bottom: 60px; /* Initial bottom margin */
-  left: 60px; /* Position from the right */  
+  right: 60px; /* Position from the right */  
   background-color: #FF741B; /* WhatsApp green color */
   color: white; /* Icon color */
   border-radius: 50%; /* Make it a circle */
