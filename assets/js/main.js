@@ -743,6 +743,8 @@
     $('.service-slider').slick({
       infinite: true,
       slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
       slidesToScroll: 1,
       arrows:true,
       dots:false,
@@ -851,6 +853,8 @@
     $('.team-slider').slick({
       infinite: true,
       slidesToShow: 4,
+      autoplay: true,
+      autoplaySpeed: 2000,
       slidesToScroll: 1,
       arrows:true,
       dots:false,
@@ -901,6 +905,8 @@
       $('.project-slider').slick({
       infinite: true,
       slidesToShow: 2,
+      autoplay:true,
+      autoplaySpeed: 3000,
       slidesToScroll: 1,
       arrows:false,
       dots:false,
@@ -952,6 +958,8 @@
       autoplay: false,
       slidesToScroll: 1,
       slidesToShow: 1,
+      autoplay:true,
+      autoplaySpeed: 3000,
       arrows: false,
       dots: false,
       fade:true,
