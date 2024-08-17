@@ -414,15 +414,15 @@
             </div>
             <h3 class="info-box-title">Follow Us</h3>
             <div class="info-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class='fab fa-instagram' style="color: #ffffff; font-size: 24px;"></i></a>
+              <a href="#"><i class="fab fa-whatsapp" style="color: #ffffff; font-size: 24px;"></i></a>
+              <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-google"></i></a> -->
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
-          <form id="contact-form" class="form-style2 layout2 ajax-contact">
+        <!-- <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
+          <form  target="_blank" action="https://formsubmit.co/akshita110008sharma@gmail.com" method="POST" class="form-style2 layout2 ajax-contact">
             <h3 class="form-title">Have Question Feel Free to Contact Us?</h3>
             <div class="row">
               <div class="col-12 form-group">
@@ -446,6 +446,28 @@
               </div>
             </div>
             <p class="form-messages mb-0 mt-3" style="display: none;"></p>
+          </form>
+        </div> -->
+        <div class="col-lg-6 col-xl-7 wow fadeInUp" >
+          <h1 class="form-title">Have Question Feel Free to Contact Us?</h1>
+          <form target="_blank" action="https://formsubmit.co/akshita110008sharma@gmail.com" method="POST">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="col form-group">
+                  <input type="number" name="number" class="form-control" placeholder="Mobile Number" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="vs-btn">Submit Form</button>
           </form>
         </div>
       </div>
@@ -616,12 +638,7 @@
               /></a>
             </div>
             <div class="col-lg-4">
-              <form action="#" class="form-style1 v4">
-                <div class="form-group">
-                  <input type="text" placeholder="Enter Email" />
-                  <button class="vs-btn">Subscribe</button>
-                </div>
-              </form>
+              
             </div>
             <div class="col-lg-4">
               <div class="social-box v4">
@@ -810,7 +827,7 @@
   <script src="assets/js/main.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/appwrite@15.0.0"></script>
-  <script>
+  <!-- <script>
     const APPWRITE_PROJECT_ID = '667818d4001600264c40'
     const APPWRITE_DATABASE_ID = "66781936000c20e6eac7"
     const APPWRITE_COLLECTION_ID = "6678193e003e16fb7237"
@@ -844,7 +861,7 @@
     document.getElementById('contact-form').addEventListener('submit', sendMessage);
 
 
-  </script>
+  </script> -->
 </body>
 
 </html>
